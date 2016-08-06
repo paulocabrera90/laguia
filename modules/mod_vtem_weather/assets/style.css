@@ -1,0 +1,14 @@
+.weatherFeed{font-family: Arial, Helvetica, sans-serif;font-size: 12px;margin: 5px;color:#888 !important;}
+.weatherFeed a,.weatherFeed a:visited,.weatherFeed a:focus{color:#135CAE; background:none !important;}
+.weatherFeed a:hover{text-decoration: none;}
+.weatherItem div{text-align: right !important;padding:0 15px !important;}
+.weatherCity { text-transform: uppercase; color:#333; }
+.weatherTemp{font-size:60px;font-weight: bold;margin:0;height:60px;line-height:60px;}
+.weatherDesc, .weatherCity { font-weight: bold; }
+.weatherDesc { margin-bottom: 0.4em; }
+.weatherRange, .weatherWind { font-size: 0.8em; }
+.weatherLink{margin-top: 6px;text-align: left !important;font-size: 0.8em;}
+.vertical{position:relative;overflow:hidden;}
+.vtemweather .items{position:absolute;height:20000em;margin: 0px;}
+.vtemweather .weatherFeed .odd{background:#f5f5f5; border-bottom:none;}
+.vtemweather .weatherFeed .even{background:#FFFFF0;}

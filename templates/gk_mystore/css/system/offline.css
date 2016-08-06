@@ -1,0 +1,170 @@
+/*
+#------------------------------------------------------------------------
+# myStore -June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+body {
+	background: #EFEFEF url('../../images/main_bg.png') no-repeat 50% 0;
+	font-family: Arial, Helvetica, Sans Serif;
+	font-size: 12px;
+	color: #555;
+}
+
+#frame {
+	background: #fff;
+	width: 600px;
+	margin: 60px auto;
+	padding: 16px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.top {
+	background: url("../../images/style1/color_bg.png") repeat-x scroll 0 bottom #E3012D;
+
+	-webkit-border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	min-height: 44px;
+}
+
+fieldset {
+	width: 442px;
+	border: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+input[type="submit"] {
+	float: right;
+	margin: 10px auto;
+	display: block;
+	background: #d0052b;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	height: 24px;
+	line-height: 24px;
+	font-size: 10px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+input[type="submit"]:hover,input[type="submit"]:focus {
+	background: #999;
+	cursor: pointer;
+}
+
+#form-login-username,#form-login-password {
+	float: left;
+	margin: 10px 0 0 0;
+	padding-left: 14px;
+}
+
+#form-login-password {
+	padding-left: 20px;
+}
+
+#form-login-remember {
+	float: left;
+	padding-left: 14px;
+}
+
+#username,#passwd {
+	display: block;
+	border-color: #3d4044;
+	width: 156px;
+}
+
+#username,#passwd {
+	border: 1px solid #ddd;
+	height: 24px;
+	width: 200px;
+	margin-top: 10px;
+}
+
+#passwd {
+	margin-left: 0px !important;
+}
+
+#message {
+	text-align: center;
+	background: #ffffdb;
+	border: 1px solid #e7e7a5;
+	padding: 11px 10px;
+	margin: 0 10px 20px;
+	color: #000;
+}
+
+#logo {
+	float: left;
+	padding: 0;
+	display: block;
+	width: 119px;
+	height: 44px;
+	background: transparent url('../../images/style1/logo.png') no-repeat;
+}
+
+#content {
+	padding-top: 20px;
+	margin-top: 4px;
+	background: #fff;
+}
+
+/* System Standard Messages */
+#system-message {
+	margin: 0;
+}
+
+#system-message dt {
+	display: none;
+}
+
+#system-message dd {
+	padding: 0 !important;
+	background: none !important;
+	font-weight: bold;
+	text-indent: 30px;
+}
+
+#system-message dd.message ul,#system-message dd.error ul,#system-message dd.notice ul {
+	margin: 0;
+	padding: 0;
+}
+
+#system-message dd.message ul,#system-message dd.notice ul {
+	background: #fefff0;
+	color: #666;
+	border: none;
+	border-bottom: 1px solid #eae8cc;
+	border-top: 1px solid #eae8cc;
+}
+
+#system-message dd.error ul {
+	background: #CF052B;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #b40110;
+	border-top: 1px solid #b40110;
+}
+
+#system-message dd.notice ul {
+	color: #b40110;
+}
+
+#system-message dd.message ul li,#system-message dd.error ul li,#system-message dd.notice ul li {
+	background: none;
+	margin: 0;
+	padding: 8px 16px;
+	text-indent: 0;
+	text-align: center;
+}

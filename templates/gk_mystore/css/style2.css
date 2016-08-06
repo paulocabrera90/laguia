@@ -1,0 +1,274 @@
+/*
+#------------------------------------------------------------------------
+# myStore -June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+/* template.css */
+a,#gkCart a {
+  color: #415f80;
+}
+
+/*#gkLogo,#gkLogo.text {
+  background: #436284 url('../images/style2/color_bg.png') repeat-x 0 bottom;
+}
+
+#gkLogo {
+  background: #436284 url('../images/style2/color_bg.png') repeat-x 0 bottom;
+}*/
+
+#gkLogo > a {
+  background: transparent url('../images/style2/logo.png') no-repeat 0 0;
+}
+
+/*div.color>h3 {
+  background: url('../images/style2/moduletable_title-color.png') repeat-x 0 0;
+  border: 1px solid #283748;
+}*/
+
+.box_menu ul li a:hover,.box ul li.even a:hover,.box ul li.odd a:hover {
+  color: #415f80;
+}
+
+#gkButtons a.popup span {
+  background: #233140;
+}
+
+#gkCart {
+  background: transparent url('../images/style2/cart_icon.png') no-repeat left 0;
+}
+
+/* menu.css */
+div.gk-menu > ul.level0 > li.active>a,div.gk-menu > ul.level0 > li.active:hover>a,div.gk-menu > ul.level0 > li:hover > a,div#gkDropMain > ul li.active>a,div#gkDropMain > ul li.active:hover>a,div#gkDropMain > ul li:hover > a {
+  color: #415f80;
+}
+
+div.gk-menu > ul.level0 > li.haschild:hover > a,div.gk-menu > ul.level0 > li.haschild.active:hover > a {
+  background: #e3012d url("../images/style2/color_bg.png") repeat-x scroll 0 bottom;
+}
+
+div.gk-menu > ul.level0 > li > .childcontent,div#gkDropSub > ul > li.haschild:hover > a,div#gkDropSub > ul ul {
+  background: #233140;
+}
+
+div.gk-menu > ul.level0 > li > .childcontent .childcontent,div#gkDropSub > ul ul ul {
+  background: #111f34;
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li:hover>a,div#gkDropSub > ul > li li a:hover {
+  color: #929eab !important;
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li,div.gk-menu > ul.level0 > li .childcontent ul li .group li,div#gkDropSub > ul > li li {
+  background: transparent url('../images/style2/submenu_line.png') repeat-x 0 bottom;
+}
+
+div.gk-menu > ul.level0 > li .childcontent ul li li,div.gk-menu > ul.level0 > li .childcontent ul li .group li li {
+  background: transparent url('../images/style2/subsubmenu_line.png') repeat-x 0 bottom;
+}
+
+div.gk-menu > ul.level0 > li li.group .group-title {
+  background: #111f34;
+  border: 1px solid #2c3f53;
+}
+
+div.gk-menu > ul.level0 > li li.group .group-title .menu-desc {
+  color: #929eab;
+}
+
+div#gkDropSub ul ul ul li {
+  background: transparent url('../images/style2/subsubmenu_line.png') repeat-x 0 bottom !important;
+}
+
+/* joomla.css */
+.tool-title {
+  background: #436284;
+}
+
+#article-index ul li:hover,#article-index ul li:hover a,#article-index ul span:hover,div.pagination ul li:hover,div.k2Pagination ul li:hover,#bottom-pagination ul li:hover,div.pagination ul li:hover a,div.k2Pagination ul li:hover a,#bottom-pagination ul li:hover a,div.pagination ul span:hover,div.k2Pagination ul span:hover,#bottom-pagination ul span:hover {
+  background: #415f80;
+  border-color: #436284;
+}
+
+.vmCartModule .show_cart a:hover {
+  background-color: #436284;
+  background-image: url('../images/style2/button.png');
+}
+
+.gkPopup .button:hover,.gkPopupWrap button:hover.validate {
+  background: #496a8f;
+}
+
+.adminform button,#adminForm button,.button,button,a.readon,.pagenav-next a,.pagenav-prev a,input[type="submit"],input[type="button"],a.product-details,.vm-button-correct,.vm-button-correct:link,.vm-button-correct:visited,button.default,#facebox .popup > div > div > a {
+  background: #436284 url('../images/style2/button.png') repeat-x 0 100%;
+}
+
+/*gkstuff*/
+.gkPopupWrap {
+  background: #233140;
+}
+
+.nspBotInterface .nspPagination li,.nspTopInterface .nspPagination li,.nspBotInterface .nspPagination li.active,.nspTopInterface .nspPagination li.active,.nspBotInterface .nspPrev,.nspTopInterface .nspPrev,.nspBotInterface .nspNext,.nspTopInterface .nspNext {
+  background-image: url('../images/style2/nsp_interface.png') !important;
+}
+
+.nspArt h4.nspHeader a {
+  color: #415f80;
+}
+
+.nspArt img.nspImage:hover {
+  border-color: #415f80 !important;
+}
+
+.nspLinks ul li h4 {
+  color: #4a6786;
+}
+
+.nspLinks ul li h4 a {
+  color: #4a6786;
+}
+
+ul.gkTabs li.active,ul.gkTabs li:hover,
+.gkTabsWrap.vertical ol li.active,.gkTabsWrap.vertical ol li:hover {
+  background-image: url("../images/style2/button.png");
+  background-color: #436284;
+  border: 1px solid #436284 !important;
+}
+
+ul.gkTabs li:hover.active,
+.gkTabsWrap.vertical ol li:hover.active {
+  background-image: url("../images/style2/button.png");
+  background-color: #436284 !important;
+  border: 1px solid #436284 !important;
+}
+
+ul.gkTabs li:hover.active,
+.gkTabsWrap.vertical ol li:hover.active {
+  border: 1px solid #436284 !important;
+}
+
+ul.gkTabs li.active:first-child,ul.gkTabs li:hover:first-child,
+.gkTabsWrap.vertical ol li.active:first-child,.gkTabsWrap.vertical ol li:hover:first-child {
+  border-top: 1px solid #436284 !important;
+}
+
+.gkIsWrapper-gk_mystore .gkIsSlide:hover {
+  border: 1px solid #415F80;
+}
+
+.gkIsWrapper-gk_mystore .gkIsPagination li {
+  background-image: url('../images/style2/is_bullets.png');
+}
+
+/* k2.css */
+div.itemHeader h2.itemTitle span sup {
+  color: #4a6786;
+}
+
+/* "Featured" presented in superscript */
+div.itemComments ul.itemCommentsList li span.commentAuthorName {
+  color: #415f80;
+}
+
+div.itemCommentsForm h4.itemCommentsFormTitle {
+  color: #135cae;
+}
+
+div.itemCommentsForm form span#formLog {
+  color: #4a6786;
+}
+
+div.subCategory a.subCategoryImage:hover img {
+  border-color: #415f80;
+}
+
+div.subCategory h2 a:hover {
+  color: #415f80;
+}
+
+div.catItemHeader h3.catItemTitle span sup {
+  color: #4a6786;
+}
+
+/* superscript */
+div.userBlock h2 {
+  color: #415f80;
+}
+
+div.userItemHeader h3.userItemTitle span sup {
+  color: #4a6786;
+}
+
+div.k2ItemsBlock ul li a.moduleItemReadMore {
+  color: #415f80;
+}
+
+div.k2ArchivesBlock ul li a {
+  color: #415f80;
+}
+
+table.calendar tr td.calendarDateLinked a:hover {
+  background: #faf9f7;
+}
+
+table.calendar tr td.calendarToday {
+  background: #4a6786;
+  color: #fff;
+}
+
+table.calendar tr td.calendarTodayLinked {
+  background: #415f80;
+}
+
+div.k2TagCloudBlock a:hover {
+  background: #415f80;
+}
+
+.k2store_item_price_value {
+  color: #4a6786;
+}
+
+table#cart td#total_price {
+  font-weight: bold;
+  color: #4a6786;
+}
+
+/* k2store */
+.k2store_product_price span.product_price,.cart_subtotal td+td,.nspK2store .nspK2storePrice {
+  color: #4a6786;
+}
+
+/* vm.css */
+.category-view .row .category .spacer h2 a img:hover,.browse-view .product .width30 a:hover {
+  border-color: #415f80;
+}
+
+.category-view .row .category .spacer h2 a:hover {
+  color: #415f80;
+}
+
+.browse-view .product .width70 .PricesalesPrice,.fdetails .PricesalesPrice,.product-price .PricesalesPrice {
+  color: #415f80 !important;
+}
+
+ul#gkProductTabs li.gkProductTabActive,#ui-tabs ul#tabs li.current {
+  background-color: #436284;
+  background-image: url("../images/style2/button.png");
+  border: 1px solid #436284;
+}
+
+span.addtocart-button input.addtocart-button,span.addtocart-button input.notify-button {
+  background: #436284 url('../images/style2/button.png') repeat-x 0 100% !important;
+}
+
+.vm_cart_products.gkProducts {
+  border: 1px solid #436284;
+}
+
+/*CSS3*/
+div.gk-menu ul.level0 > li.haschild:hover > a,div.gk-menu ul.level0 > li.haschild-over:hover > a,.box.color > h3,.adminform button,#adminForm button,.button,button,input[type="button"],a.readon,.category_product_readmore a,.kategori_produkt_laesmere a,ul#gkProductTabs li.gkProductTabActive,#ui-tabs ul#tabs li.current,.gkPopup .button:hover,.vmCartModule .show_cart a:hover,.gkPopupWrap button:hover.validate,a.product-details,span.addtocart-button input.addtocart-button,span.addtocart-button input.notify-button,.vm-button-correct,.vm-button-correct:link,.vm-button-correct:visited,#facebox .popup > div > div > a {
+  text-shadow: 1px -1px 1px #001929;
+}

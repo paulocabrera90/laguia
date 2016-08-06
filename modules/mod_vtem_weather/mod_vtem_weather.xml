@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" position="status" method="upgrade">
+	<name>VTEM Weather</name>
+	<author>Nguyen Van Tuyen</author>
+	<creationDate>07/07/2011</creationDate>
+	<copyright>VTEM.NET</copyright>
+	<license>GPLv2.0 - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>tuyen0110@gmail.com</authorEmail>
+	<authorUrl>www.vtem.net</authorUrl>
+	<version>1.2</version>
+	<description>VTEM Weather for joomla</description>
+	<files>
+		<filename module="mod_vtem_weather">mod_vtem_weather.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+		<filename>index.html</filename>
+	</files>
+	<params>
+		<param name="slideID" type="text" default="vtemweather1" label="Module unique ID" description="Unique ID for module (must be unique if you have two or more modules on one page) (i.e. vtemweather1)"/>
+		<param name="width" type="text" default="280" label="Module width(px)" description="Width for the module" />
+		<param name="height" type="text" default="160" label="Module Height(px)" description="Height for the module" />
+		<param name="border" type="text" default="5px solid #ddd" label="Module border" description="Border for the module" size="30" />
+		<param name="location" type="text" default="'UKXX0085','EGXX0011','UKXX0061'" label="Location" description="Array of location ID's to display." size="50" />
+		<param name="unit" type="radio" default="c" label="Unit" description="Specifies the units to return: 'c' - celsius, 'f' - fahrenheit">
+			<option value="c">C</option>
+			<option value="f">F</option>
+		</param>
+		<param name="image" type="radio" default="1" label="Show image" description="If YES, displays an image of the weather condition in the background.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+        <param name="highlow" type="radio" default="1" label="High and Low" description="If YES, includes the high and low values in each item.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="wind" type="radio" default="1" label="Wind" description="If YES, includes the wind direction and strength in each item.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="link" type="radio" default="1" label="Link" description="If YES, includes the link to full forecast on the Yahoo! website.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showerror" type="radio" default="1" label="Show error" description="If YES, displays a message if the feed is unavailable or the location is invalid.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="interval" type="text" default="3000" label="Interval" description="Specifies how many seconds to periodically autoscroll the content." />
+	</params>
+	<params group="advanced">
+	    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A Suffix to be applied the CSS class of this module, this allow indivdual module styling" />
+		<param name="script" type="radio" default="1" label="Include JQuery" description="Choose NO, If you want to insert or was insert the JQuery on your template" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="css" type="textarea" default="" label="Your CSS" description="" cols="36" rows="5"/>
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+	<config>
+	  <fields name="params">
+		<fieldset name="basic">
+		<field name="slideID" type="text" default="vtemweather1" label="Module unique ID" description="Unique ID for module (must be unique if you have two or more modules on one page) (i.e. vtemweather1)"/>
+		<field name="width" type="text" default="280" label="Module width(px)" description="Width for the module" />
+		<field name="height" type="text" default="160" label="Module Height(px)" description="Height for the module" />
+		<field name="border" type="text" default="5px solid #ddd" label="Module border" description="Border for the module" size="30" />
+		<field name="location" type="text" default="'UKXX0085','EGXX0011','UKXX0061'" label="Location" description="Array of location ID's to display." size="50" />
+		<field name="unit" type="radio" default="c" label="Unit" description="Specifies the units to return: 'c' - celsius, 'f' - fahrenheit">
+			<option value="c">C</option>
+			<option value="f">F</option>
+		</field>
+		<field name="image" type="radio" default="1" label="Show image" description="If YES, displays an image of the weather condition in the background.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+        <field name="highlow" type="radio" default="1" label="High and Low" description="If YES, includes the high and low values in each item.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="wind" type="radio" default="1" label="Wind" description="If YES, includes the wind direction and strength in each item.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="link" type="radio" default="1" label="Link" description="If YES, includes the link to full forecast on the Yahoo! website.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="showerror" type="radio" default="1" label="Show error" description="If YES, displays a message if the feed is unavailable or the location is invalid.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="interval" type="text" default="3000" label="Interval" description="Specifies how many seconds to periodically autoscroll the content." />
+		</fieldset>
+		<fieldset name="advanced">
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A Suffix to be applied the CSS class of this module, this allow indivdual module styling" />
+		<field name="script" type="radio" default="1" label="Include JQuery" description="Choose NO, If you want to insert or was insert the JQuery on your template" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="css" type="textarea" default="" label="Your CSS" description="" cols="36" rows="5"/>
+		<field name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</field>
+		<field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+		</fieldset>
+	 </fields>
+   </config>
+</install>

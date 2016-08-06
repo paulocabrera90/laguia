@@ -1,0 +1,261 @@
+/*
+#------------------------------------------------------------------------
+# myStore -June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+/* fonts */
+body {
+	font: normal 12px/1.8 Arial, sans-serif;
+}
+
+html {
+	height: 100%;
+	min-height: 100%;
+	border-bottom: 1px solid transparent;
+}
+
+#gkRight .gkMain:first-child,#gkLeft .gkMain:first-child,.gkMain:first-child,#gkHeader {
+	margin-top: 0;
+}
+
+#gkHeader {
+	overflow: inherit !important;
+}
+
+#gkMain {
+	margin: 0 0 10px;
+	padding: 20px 20px 4px;
+	background: #fff;
+}
+
+#gkUser1,#gkUser2 {
+	padding: 20px 20px 4px;
+	background: #fff;
+}
+
+#gkContentMainbody {
+	margin: 0 !important;
+}
+
+#gkComponentWrap {
+	margin-bottom: 20px !important;
+}
+
+#gkWrap1,#gkWrap2,#gkWrap3 {
+	margin: 0 auto;
+}
+
+#gkTop1,#gkTop2,#gkUser1,#gkUser2,#gkBottom1,#gkBottom2,#gkMainBlock,#gkLeftMiddle,#gkRightMiddle,#gkHeader {
+	border-collapse: collapse;
+	display: table;
+	width: 100%;
+}
+
+#gkUser1,#gkUser2 {
+	background: #FFF;
+	margin: 0 0 10px;
+	padding: 20px 20px 4px;
+}
+
+#gkLeft > div {
+	padding-right: 16px;
+}
+
+#gkRight > div {
+	padding-left: 16px;
+}
+
+.gkWrap:after,.gkMain:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.gkCol {
+	display: block;
+	float: left;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+/* gk_style box-model */
+#gkBottom1 .box,#gkBottom2 .box {
+	padding: 0 !important;
+}
+
+/* USER/TOP/BOTTOM columns */
+#gkUser1 .gkColFull > .box,#gkTop1 .gkColFull > .box,#gkBottom1 .gkColFull > .box,#gkUser2 .gkColFull > .box,#gkTop2 .gkColFull > .box,#gkBottom2 .gkColFull > .box {
+	padding: 8px;
+}
+
+#gkUser1 .gkColCenter > .box,#gkTop1 .gkColCenter > .box,#gkBottom1 .gkColCenter > .box,#gkUser2 .gkColCenter > .box,#gkTop2 .gkColCenter > .box,#gkBottom2 .gkColCenter > .box {
+	margin: 0 10px;
+	padding: 8px;
+}
+
+#gkUser1 .gkColLeft > .box,#gkTop1 .gkColLeft > .box,#gkBottom1 .gkColLeft > .box,#gkUser2 .gkColLeft > .box,#gkTop2 .gkColLeft > .box,#gkBottom2 .gkColLeft > .box {
+	margin: 0 10px 0 0;
+	padding: 8px;
+}
+
+#gkUser1 .gkColRight > .box,#gkTop1 .gkColRight > .box,#gkBottom1 .gkColRight > .box,#gkUser2 .gkColRight > .box,#gkTop2 .gkColRight > .box,#gkBottom2 .gkColRight > .box {
+	margin: 0 0 0 10px;
+	padding: 8px;
+}
+
+/* TBLR */
+.gkPaddingT {
+	padding-top: 0 !important;
+}
+
+.gkPaddingB {
+	padding-bottom: 0 !important;
+}
+
+.gkPaddingL {
+	padding-left: 16px !important;
+}
+
+.gkPaddingR {
+	padding-right: 16px !important;
+}
+
+.gkPaddingTB {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.gkPaddingTL {
+	padding-top: 0 !important;
+	padding-left: 8px !important;
+}
+
+.gkPaddingTR {
+	padding-top: 0 !important;
+	padding-right: 8px !important;
+}
+
+.gkPaddingBL {
+	padding-bottom: 0 !important;
+	padding-left: 0 !important;
+}
+
+.gkPaddingBR {
+	padding-bottom: 0 !important;
+	padding-right: 0 !important;
+}
+
+.gkPaddingLR {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.gkPaddingTBL {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	padding-left: 0 !important;
+}
+
+.gkPaddingTBR {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	padding-right: 0 !important;
+}
+
+.gkPaddingTLR {
+	padding-top: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.gkPaddingBLR {
+	padding-bottom: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.gkPaddingTBLR {
+	padding: 0 !important;
+}
+
+/* Joomla columns */
+.cols-1 {
+	display: block;
+	float: none !important;
+	margin: 0 !important;
+}
+
+.cols-2 .column-1 {
+	width: 46%;
+	float: left;
+}
+
+.cols-2 .column-2 {
+	width: 46%;
+	float: right;
+	margin: 0;
+}
+
+.cols-3 .column-1 {
+	float: left;
+	width: 29%;
+	padding: 0px 5px;
+	margin-right: 4%;
+}
+
+.cols-3 .column-2 {
+	float: left;
+	width: 29%;
+	margin-left: 0;
+	padding: 0px 5px;
+}
+
+.cols-3 .column-3 {
+	float: right;
+	width: 29%;
+	padding: 0px 5px;
+}
+
+.items-row {
+	overflow: hidden;
+	margin-bottom: 10px !important;
+}
+
+.item img {
+	display: block;
+}
+
+.column-1,.column-2,.column-3 {
+	padding: 10px 5px;
+}
+
+.column-2 {
+	width: 55%;
+	margin-left: 40%;
+}
+
+.column-3 {
+	width: 30%;
+}
+
+#gkWrap2,.items-row {
+	display: inline-block;
+}
+
+html[xmlns] #gkWrap2,html[xmlns] .items-row {
+	display: block;
+}
+
+* html #gkWrap2,* html .items-row {
+	height: 1%;
+}

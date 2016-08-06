@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+<head>
+<title>Help</title>
+<link href="../../../../help/en-GB/css/help.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h1>jPFChat Help Topics</h1>
+
+<p>Most users who open this help screen are doing so because they've encountered one of a few known issues.  We're addressing the most common ones here.</p>
+   
+<p>Please remember that we did NOT write phpFreeChat (<a href="http://www.phpfreechat.net">www.phpfreechat.net</a>).&nbsp; 
+We wrote the interface that allows phpFreeChat to be used inside of Joomla.&nbsp; 
+Many issues that users write us about are not jPFChat issues.&nbsp; They are 
+issues with the Chat script itself.&nbsp;&nbsp; We've got NO input, control over 
+or ability to influence the development of the phpFreeChat script.&nbsp; Please 
+visit their website for information or issues specific to their chat script.</p>
+<p>There are two main issues we keep hearing about over and over and over....</p>
+<p><b>Usernames:</b>&nbsp;&nbsp; If usernames are not being picked up, please 
+remember that jPFChat will only recognize users who were logged into Joomla 
+BEFORE they came into the chat room.&nbsp;&nbsp; If they were in the Chat Room 
+at ANY TIME prior to logging into Joomla, then the cache will recognize them as 
+the &quot;connection&quot; they were before logging in.&nbsp;&nbsp; This is a phpfreechat 
+shortcoming that we haven't created a workaround for yet.</p>
+<p><b>jPFChat doesn't Load:</b>&nbsp;&nbsp; This is MOST LIKELY due to a 
+MooTools javascript library conflict.&nbsp;&nbsp; Joomla 1.5.x includes a native 
+MooTools javascript library, and MANY templates load it even if it's not 
+actually being used.&nbsp;&nbsp; Some Joomla 1.0.x templates use it.&nbsp;&nbsp; 
+In addition, many Modules for both Joomla versions load MooTools as well.&nbsp;&nbsp; 
+If the MooTools library is loaded... then jPFChat will NOT function properly... 
+especially in the Internet Explorer browser.&nbsp; FireFox seems to work OK in 
+some cases, but there have been reports of odd behavior even if jPFChat does 
+actually load up.&nbsp;&nbsp;&nbsp; Please don't write us about MooTools.&nbsp; 
+We are completely and fully aware of the conflict... we're working on a possible 
+fix... and there are several possible short-term workarounds already posted on 
+the <a href="http://www.jpfchat.com">www.jpfchat.com</a> website.&nbsp; Read the 
+articles about it there.</p>
+   
+</body>
+</html>

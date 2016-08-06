@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+            <fieldset name="maximenu_menuparams" label="PLG_MAXIMENUCK_MENUPARAMS_FIELDSET_LABEL">
+                <field
+                    name="menustyles"
+                    identifier="menustyles"
+                    type="ckstylesmanager"
+                    label="MOD_MAXIMENUCK_FIELD_MENUSTYLES_LABEL"
+                    description="MOD_MAXIMENUCK_FIELD_MENUSTYLES_DESC"
+                    icon=""
+                    filter="raw" 
+                    default="[]" />
+                <field
+                    name="level1itemnormalstyles"
+                    identifier="level1itemnormalstyles"
+                    type="ckstylesmanager"
+                    label="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMNORMALSTYLES_LABEL"
+                    description="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMNORMALSTYLES_DESC"
+                    icon=""
+                    filter="raw" 
+                    default="[]" />
+                <field
+                    name="level1itemhoverstyles"
+                    identifier="level1itemhoverstyles"
+                    type="ckstylesmanager"
+                    label="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMHOVERSTYLES_LABEL"
+                    description="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMHOVERSTYLES_DESC"
+                    icon=""
+                    filter="raw" 
+                    default="[]" />
+                <field
+                    name="level1itemactivestyles"
+                    identifier="level1itemactivestyles"
+                    type="ckstylesmanager"
+                    label="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMACTIVESTYLES_LABEL"
+                    description="MOD_MAXIMENUCK_FIELD_LEVEL1ITEMACTIVESTYLES_DESC"
+                    icon=""
+                    filter="raw" 
+                    default="[]" />
+                <field
+                    name="level2menustyles"
+                    identifier="level2menustyles"
+                    type="ckstylesmanager"
+                    label="MOD_MAXIMENUCK_FIELD_LEVEL2MENUSTYLES_LABEL"
+                    description="MOD_MAXIMENUCK_FIELD_LEVEL2MENUSTYLES_DESC"
+                    icon=""
+                    filter="raw" 
+                    default="[]" />
+                <field
+                    name="level2itemnormalstyles"
+                    identifier="level2itemnormalstyles"
+                    type="ckstylesmanager"
+                    label="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMNORMALSTYLES_LABEL"
+                    description="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMNORMALSTYLES_DESC"
+                    icon=""
+                    filter="raw" 
+                    default="[]" />
+                <field
+                    name="level2itemhoverstyles"
+                    identifier="level2itemhoverstyles"
+                    type="ckstylesmanager"
+                    label="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMHOVERSTYLES_LABEL"
+                    description="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMHOVERSTYLES_DESC"
+                    icon=""
+                    filter="raw" 
+                    default="[]" />
+                <field
+                    name="level2itemactivestyles"
+                    identifier="level2itemactivestyles"
+                    type="ckstylesmanager"
+                    label="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMACTIVESTYLES_LABEL"
+                    description="MOD_MAXIMENUCK_FIELD_LEVEL2ITEMACTIVESTYLES_DESC"
+                    icon=""
+                    filter="raw" 
+                    default="[]" />
+		</fieldset>
+	</fields>
+</form>

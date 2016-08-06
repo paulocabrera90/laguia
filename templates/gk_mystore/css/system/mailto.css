@@ -1,0 +1,83 @@
+/*
+#------------------------------------------------------------------------
+# myStore -June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+body {
+	background: #fbfbfb;
+	color: #444;
+	font: 13px/1.8 Verdana,Geneva,sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-size: 150%;
+	color: #222;
+}
+
+a {
+	text-decoration: none;
+	color: #CF052B;
+}
+
+a:hover,a:active,a:focus {
+	color: #222;
+}
+
+p {
+	margin: 0.8em 0;
+}
+
+a > img {
+	display: none !important;
+}
+
+#mailto-window {
+	padding: 0 20px;
+}
+
+form div label {
+	display: block;
+	width: 100%;
+	font-size: 90%;
+}
+
+form div input {
+	width: 96%;
+	background: #fff;
+	border: 1px solid #eee;
+	padding: 5px 6px;
+	color: #666;
+}
+
+.button {
+	float: right;
+	background: #e3012d url('../../images/style1/button.png') repeat-x 100%;
+	margin: 0 0 0 4px;
+	cursor: pointer;
+	padding: 6px 9px;
+	text-align: center;
+	font: bold 10px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: none;
+}
+
+.button:first-child {
+	float: left;
+}
+
+.button:hover,.button:focus {
+	background: #ececec url('../../images/button-h.png') repeat-x 0 100%;
+	cursor: pointer;
+	color: #444;
+}

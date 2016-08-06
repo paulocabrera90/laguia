@@ -1,0 +1,101 @@
+/*
+#------------------------------------------------------------------------
+# myStore -June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License:  Copyrighted Commercial Software
+# Website:  http://www.gavick.com
+# Support:  support@gavick.com
+ */
+* {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+	color: #666;
+}
+
+body {
+	background: #EFEFEF url('../../images/main_bg.png') no-repeat 50% 0;
+}
+
+h1,h2 {
+	border-bottom: medium none;
+	color: #CF052B;
+	font-size: 120px;
+	line-height: 120px;
+	margin: 30px auto 10px;
+	text-align: center;
+}
+
+p {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 6px;
+	margin: 24px 0 12px 0;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 0 0 20px;
+	line-height: 40px;
+}
+
+ul {
+	list-style-type: square;
+	padding: 0 0 0 36px;
+}
+
+ol {
+	padding: 0;
+	list-style-position: inside;
+}
+
+ol li,ol li strong {
+	font-size: 11px !important;
+	font-weight: normal;
+}
+
+#frame {
+	background: #fff;
+	width: 600px;
+	margin: 60px auto;
+	padding: 16px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.top {
+	background: #E3012D url('../../images/style1/color_bg.png') repeat-x 0 bottom;
+	min-height: 44px;
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.middle {
+	padding-top: 20px;
+	margin-top: 4px;
+	background: #fff;
+}
+
+#gkLogo {
+	float: left;
+	padding: 0;
+	display: block;
+	width: 119px;
+	height: 44px;
+	margin: 0;
+	line-height: normal;
+}
+
+#outline {
+	width: 480px;
+	margin: auto;
+}
+
+#errorboxbody {
+	margin: 10px 0 0;
+	padding: 20px;
+	text-align: center;
+}

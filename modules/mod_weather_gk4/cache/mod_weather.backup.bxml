@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+		<rss version="2.0" xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+			<channel>
+		
+<title>Yahoo! Weather - San Luis, AR</title>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/San_Luis__AR/*http://weather.yahoo.com/forecast/ARSL5700_c.html</link>
+<description>Yahoo! Weather for San Luis, AR</description>
+<language>en-us</language>
+<lastBuildDate>Thu, 24 Mar 2016 3:01 pm ART</lastBuildDate>
+<ttl>60</ttl>
+<location city="San Luis" region="SL"   country="Argentina"/>
+<units temperature="C" distance="km" pressure="mb" speed="km/h"/>
+<wind chill="23"   direction="140"   speed="24.14" />
+<atmosphere humidity="49"  visibility=""  pressure="1018"  rising="0" />
+<astronomy sunrise="7:33 am"   sunset="7:30 pm"/>
+<image>
+<title>Yahoo! Weather</title>
+<width>142</width>
+<height>18</height>
+<link>http://weather.yahoo.com</link>
+<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+</image>
+<item>
+<title>Conditions for San Luis, AR at 3:01 pm ART</title>
+<lat>-33.3</lat>
+<long>-66.33</long>
+<link>http://us.rd.yahoo.com/dailynews/rss/weather/San_Luis__AR/*http://weather.yahoo.com/forecast/ARSL5700_c.html</link>
+<pubDate>Thu, 24 Mar 2016 3:01 pm ART</pubDate>
+<condition  text="Partly Cloudy"  code="30"  temp="23"  date="Thu, 24 Mar 2016 3:01 pm ART" />
+<description><![CDATA[
+<img src="http://l.yimg.com/a/i/us/we/52/30.gif"/><br />
+<b>Current Conditions:</b><br />
+Partly Cloudy, 23 C<BR />
+<BR /><b>Forecast:</b><BR />
+Thu - Mostly Cloudy/Wind. High: 25 Low: 15<br />
+Fri - Rain. High: 21 Low: 13<br />
+Sat - Mostly Sunny. High: 24 Low: 14<br />
+Sun - Sunny. High: 26 Low: 14<br />
+Mon - Sunny. High: 27 Low: 16<br />
+<br />
+<a href="http://us.rd.yahoo.com/dailynews/rss/weather/San_Luis__AR/*http://weather.yahoo.com/forecast/ARSL5700_c.html">Full Forecast at Yahoo! Weather</a><BR/><BR/>
+(provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+]]></description>
+<forecast day="Thu" date="24 Mar 2016" low="15" high="25" text="Mostly Cloudy/Wind" code="24" />
+<forecast day="Fri" date="25 Mar 2016" low="13" high="21" text="Rain" code="12" />
+<forecast day="Sat" date="26 Mar 2016" low="14" high="24" text="Mostly Sunny" code="34" />
+<forecast day="Sun" date="27 Mar 2016" low="14" high="26" text="Sunny" code="32" />
+<forecast day="Mon" date="28 Mar 2016" low="16" high="27" text="Sunny" code="32" />
+<guid isPermaLink="false">ARSL5700_2016_03_28_7_00_ART</guid>
+</item>
+</channel>
+</rss>
+
+<!-- fan1589.sports.bf1.yahoo.com Thu Mar 24 12:20:25 PDT 2016 -->

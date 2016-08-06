@@ -1,0 +1,6 @@
+Aplicación: Joomla
+-----------------------------
+ * Versión: 2.5.5 (20-06-12)
+ * Panel Administrativo: /administrator
+ * Archivo de configuración: /configuration.php
+ * Charset del SQL: UTF-8

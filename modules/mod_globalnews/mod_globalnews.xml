@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module" version="1.7" client="site" method="upgrade">
+	<name>Global News</name>
+	<author>Jesus Vargas</author>
+	<creationDate>April 2008</creationDate>
+	<copyright>(C) 2005 - 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>chuzky@gmail.com</authorEmail>
+	<authorUrl>http://www.joomlahill.com</authorUrl>
+	<version>2.5.3</version>
+	<description>Groups your news by sections or by categories</description>
+	<files>
+		<filename module="mod_globalnews">mod_globalnews.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>scripts</folder>
+		<folder>thumbs</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_globalnews.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_globalnews.sys.ini</language>
+	</languages>
+	<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="layout" type="list" default="0" label="Article List Layout" description="Choose an Article List Layout">
+				<option value="list">Plain List</option>
+				<option value="static">Static Content</option>
+				<option value="slider">Content Slider</option>
+				<option value="browser">Content Browser</option>
+				<option value="scroller">Content Scroller</option>
+			</field>
+			<field name="cols" type="text" default="1" label="Columns" description="Number of columns" />
+			<field name="margin" type="text" default="2px" label="Margin" description="Margin between Groups" />
+			<field name="catid" type="category" extension="com_content"
+				multiple="true" size="5"
+				label="Categories"
+				description="Please select one or more categories">
+				<option value="">All</option>
+			</field>
+			<field name="show_child_category_articles" type="radio"
+				default="0"
+				label="Child Category Articles"
+				description="Include or Exclude Articles from Child Categories">
+				<option value="1">Include</option>
+				<option value="0">Exclude</option>
+			</field>
+			<field name="levels" type="text" default="1"
+				label="Category Depth"
+				description="The number of child category levels to return" />
+			<field name="cat_order" type="list" default="1" label="Category Order" description="Categories/Sections ordering options">
+				<option value="1">By ID</option>
+				<option value="2">By Title</option>
+				<option value="3">By Default</option>
+				<option value="0">Random</option>
+			</field>
+			<field name="empty" type="radio" default="0" label="Empty Category" description="Hide/Show empty Category/Section">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field name="curcat" type="radio" default="0" label="Current Category" description="If you are viewing a particular Category/Section">
+				<option value="0">Clickable</option>
+				<option value="1">Non Clickable</option>
+			</field>
+			<field name="show_cat" type="list" default="1" label="Category Header" description="Show/Hide Category/Section name">
+				<option value="0">Hide</option>
+				<option value="1">Show Clickable</option>
+				<option value="2">Show Non Clickable</option>
+			</field>
+			<field name="cat_title" type="list" default="1" label="Category Title" description="Category/Section Title">
+				<option value="0">Hide</option>
+				<option value="1">Normal</option>
+				<option value="2">Strong</option>
+				<option value="3">Underline</option>
+				<option value="4">Strong Underline</option>
+				<option value="5">Heading 1</option>
+				<option value="6">Heading 2</option>
+				<option value="7">Heading 3</option>
+				<option value="8">Heading 4</option>
+				<option value="9">Heading 5</option>
+				<option value="10">Heading 6</option>
+			</field>
+			<field name="cat_img_align" type="list" default="0" label="Category Image" description="Categories/Sections Images">
+				<option value="0">Hide</option>
+				<option value="left">Float Left</option>
+				<option value="right">Float Right</option>
+				<option value="center">Center</option>
+			</field>
+			<field name="cat_img_width" type="text" default="" label="Category Image Width" description="Category Image Width (px), or leave blank for a proportional width" />
+			<field name="cat_img_height" type="text" default="" label="Category Image Height" description="Category Image Height (px), or leave blank for a proportional height" />
+			<field name="cat_img_margin" type="text" default="3px" label="Category Image Margin" description="Category Image Margin" />
+			<field name="cat_img_border" type="text" default="0" label="Category Image Border" description="Category Image Border" />
+			<field name="filteringspacer1" type="spacer" hr="true" />
+			<field name="count" type="text" default="5" label="Count Articles" description="The number of items to display for each Section/Category (default 5)" />
+			<field name="article_ordering" type="list" default="a.title" label="Article Field to Order By" description="Select which field you would like Articles to be ordered by. Featured Ordering should only be used when Ordering Option for Featured Articles is set to 'Only'">
+				<option value="a.ordering">Ordering</option>
+				<option value="fp.ordering">Featured Ordering</option>
+				<option value="a.hits">Hits</option>
+				<option value="a.title">Title</option>
+				<option value="a.id">Id</option>
+				<option value="a.alias">Alias</option>
+				<option value="a.created">Created Date</option>
+				<option value="modified">Modified Date</option>
+				<option value="publish_up">Start Publishing Date</option>
+				<option value="a.publish_down">Finish Publishing Date</option>
+				<option value="rand()">Random</option>
+			</field>
+			<field name="article_ordering_direction" type="list" default="ASC" label="Ordering Direction" description="Select the direction you would like Articles to be ordered by">
+				<option value="DESC">Descending</option>
+				<option value="ASC">Ascending</option>
+			</field>
+			<field name="limittitle" type="text" default="" label="Title Chars Limit" description="Article's Title Characters Limit" />
+			<field name="show_front" type="list" default="0" label="Featuread Items" description="Show/Hide Featured Articles">
+				<option value="show">Show</option>
+				<option value="hide">Hide</option>
+				<option value="only">Only</option>
+			</field>
+			<field name="created_by" type="sql"
+				multiple="true" size="5"
+				label="Authors"
+				description="Select one or more authors from the list below"
+				query="select id, name, username from #__users where id IN (select distinct(created_by) from #__content) order by name ASC"
+				key_field="id" value_field="name"
+			>
+				<option value="">Select Authors</option>
+			</field>
+			<field name="current" type="list" default="1" label="Current Article in List" description="If you are looking at an article that happens to be on the list">
+				<option value="0">Hide</option>
+				<option value="1">Show Clickable</option>
+				<option value="2">Show non Clickable</option>
+			</field>
+			<field name="more" type="radio" default="0" label="MORE ARTICLES link" description="Show/Hide MORE ARTICLES link">
+				<option value="1">Show</option>
+				<option value="0">Hide</option>
+			</field>
+			<field name="filteringspacer2" type="spacer" hr="true" />
+			<field name="width" type="text" default="auto" label="Width" description="If not auto, specify px, em or %" />
+			<field name="border" type="text" default="1px solid #EFEFEF" label="Border" description="Border (1px solid #EFEFEF)" />
+			<field name="header_color" type="text" default="#EFEFEF" label="Header Bgcolor" description="Header Background Color" />
+			<field name="header_padding" type="text" default="5px" label="Header Padding" description="Category Header Padding" />
+			<field name="height" type="text" default="100px" label="Content Area Height" description="Specify px, em or %" />
+			<field name="color" type="text" default="#FFFFFF" label="Content Area Bgcolor" description="Content Area Background Color" />
+			<field name="padding" type="text" default="5px" label="Content Area Padding" description="Padding" />
+			<field name="delay" type="text" default="3000" label="Scroller/Slider Delay" description="Scroller/Slide Delay (ms)" />
+			<field name="next" type="radio" default="0" label="Slider NEXT link" description="Show/Hide NEXT link in slider pagination" >
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field name="filteringspacer3" type="spacer" hr="true" />
+			<field name="html" type="textarea" filter="raw" cols="38" rows="7" default="GN_image GN_title GN_break GN_date GN_break GN_text GN_readmore" label="HTML Supported Code for Content Layouts. FEATURED ELEMENTS: GN_image, GN_title, GN_text, GN_author, GN_date, GN_readmore, GN_hits_label, GN_hits_value, GN_break, GN_space" description="Insert any HTML code between the default elements" />
+			<field name="limittext" type="text" default="150" label="Text Chars Limit" description="Article's Text Characters Limit (0 means no limit)" />
+			<field name="striptext" type="radio" default="1" label="Strip Tags?" description="Strip HTML tags from your Articles intro (full) text (Selecting No could cause an HTML mess-up)">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="allowedtags" type="text" filter="raw" default="" label="Allowed Tags" description="If you choose to Strip Tags, you can write here down those tags you would like to keep" />
+			<field name="date_format" type="text" default="" label="Date Format" description="Optional format for strftime, or leave blank for a formated date according to current local" />
+			<field name="date" type="radio" default="created" label="Selected Date" description="Selected Date">
+				<option value="created">Created</option>
+				<option value="modified">Modified</option>
+			</field>
+			<field name="item_img_align" type="list" default="left" label="Article Image Align" description="Left/Right">
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+				<option value="center">Center</option>
+			</field>
+			<field name="item_img_width" type="text" default="90" label="Article Image Width" description="Article Image Width (px), or leave blank for a proportional width" />
+			<field name="item_img_height" type="text" default="90" label="Article Image Height" description="Article Image Height (px), or leave blank for a proportional height" />
+			<field name="item_img_margin" type="text" default="3px" label="Article Image Margin" description="Article Image Margin" />
+			<field name="item_img_border" type="text" default="0" label="Article Image Border" description="Article Image Border" />
+			<field name="thumb_image" type="radio" default="1"
+				label="Create Thumbs"
+				description="Auto create and display thumbs from the article images"
+			>
+				<option value="1">JYES
+				</option>
+				<option value="0">JNO
+				</option>
+			</field>
+				
+			<field name="thumb_proportions" type="list" default="bestfit"
+				label="Porportions"
+				description="Porportions"
+			>
+				<option value="bestfit">Best fit keep proportions</option>
+				<option value="crop">Crop to fit (cut one side)</option>
+				<option value="only_cut">Crop to fit (cut both sides)</option>
+				<option value="fill">Fill out with background color</option>
+				<option value="transparent">Fill out with transparent background</option>
+				<!--<option value="stretch">MOD_FEATCATS_OPTION_PROP_STRECH</option>-->
+			</field>
+			
+			<field name="thumb_bg" type="text" default="#FFFFFF" 
+				label="Background" 
+				description="Background color to fill out the thumb Applies only if 'Fill out with background/transparent color' is selected above" 
+			/>
+			
+			<field name="thumb_type" type="list" default="" 
+				label="Image type"
+				description="Image type of generated images"
+			>
+				<option value="">preserve</option>
+				<option value="png">PNG</option>
+				<option value="gif">GIF</option>
+				<option value="jpeg">JPG</option>
+			</field>
+			<field name="author" type="list" default="username" label="Author" description="Author">
+				<option value="username">Username</option>
+				<option value="name">Name</option>
+				<option value="alias">Alias</option>
+			</field>
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+				<option value="0">No caching</option>
+				<option value="1">Use global</option>
+			</field>
+			<field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+			<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		</fieldset>
+	</fields>
+	</config>
+</extension>
